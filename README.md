@@ -1,6 +1,7 @@
 # Lotide Refactor
 
 ## Best Practices
+
 - src for functions
 - test for tests
 - functions
@@ -8,3 +9,14 @@
   - Newlines for function executions
   - Ternary for assertEqual
 - double-ticks for strings
+
+## Test
+
+- Tests are name in camelcase and non plural
+- When importing files, we will not be adding .js at the end of a file.
+
+```js
+
+const variable = require(../src/functionName)
+
+```
