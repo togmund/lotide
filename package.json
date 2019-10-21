@@ -1,0 +1,24 @@
+{
+  "name": "lotide-refactor",
+  "version": "1.0.0",
+  "description": "#hello right back",
+  "main": "assertEqual.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FroyoNom/lotide-refactor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FroyoNom/lotide-refactor/issues"
+  },
+  "homepage": "https://github.com/FroyoNom/lotide-refactor#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chalk": "^2.4.2",
+    "mocha": "^6.2.2"
+  }
+}
