@@ -1,5 +1,9 @@
 # Lotide Refactor
 
+## Contributors
+ - @froyonom
+ - @togmund
+
 ## Best Practices
 
 - src for functions
