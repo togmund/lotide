@@ -2,12 +2,11 @@ const assertEqual = require("../src/assertEqual");
 
 // Test code
 
-describe("AssertEqual", () => {
-  it("", function () {
+describe("AssertEqualTest", () => {
+  it("should return 'not matched' when two words are not equal", () => {
     assertEqual("Lighthouse Labs", "Bootcamp");
+  });
+  it("should return 'matched' when two words are equal", () => {
     assertEqual(1, 1);
-    assertEqual(1, "1");
-    assertEqual(true, false);
-    assertEqual(1 + 1, 2);
-  })
+  });
 });
