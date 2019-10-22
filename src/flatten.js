@@ -1,19 +1,12 @@
 // FUNCTION IMPLEMENTATION
 
-const flatten = (argument) => {
-  let input = argument;
-  let tempArgument = [];
-  input.map(function(inputElement) {
-    if (Array.isArray(inputElement)) {
-      inputElement.forEach(nestedElement => {
-        tempArgument.push(nestedElement);
-      });
-    } else {
-      tempArgument.push(inputElement);
-      return inputElement;
-    }
-  });
-  return tempArgument;
-};
+function flatten(array) {
+  return array.reduce(
+    function flat(nestedArray, nestedElement) {
+      return ( Array.isArray(nestedElement)
+      && nestedElement.reduce(flat, nestedArray))
+      || nestedArray.concat(nestedElement);},
+      []);
+}
 
 module.exports = flatten;
