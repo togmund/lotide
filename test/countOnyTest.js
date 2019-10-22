@@ -15,19 +15,15 @@ const firstNames = [
 ];
 
 const result1 = _.count(firstNames, {
-  Jason: true,
   Karima: true,
   Fang: true
 });
 
 describe("countTest", () => {
-  it("should return ", () => {
-    assert.deepEqual(result1["Jason"], 1); // => true
-  });
-  it("should return ", () => {
-    assert.deepEqual(result1["Karima"], undefined); // => true
-  });
-  it("should return ", () => {
+  it("should return the amount of occurrences of a value in an object", () => {
     assert.deepEqual(result1["Fang"], 2); // => true
+  });
+  it("should return undefined where a value does not appear in an object", () => {
+    assert.deepEqual(result1["Karima"], undefined); // => true
   });
 });
