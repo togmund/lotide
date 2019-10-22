@@ -14,7 +14,7 @@ const firstNames = [
   "Joe"
 ];
 
-const result1 = _.count(firstNames, {
+const result1 = _.countOnly(firstNames, {
   Jason: true,
   Karima: true,
   Fang: true
